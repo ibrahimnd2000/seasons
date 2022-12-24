@@ -1,4 +1,5 @@
 import React from 'react';
+import SeasonDisplay from './SeasonDisplay';
 
 class App extends React.Component {
   state = {
@@ -21,7 +22,7 @@ class App extends React.Component {
 
   render() {
     return this.state.errorMessage === '' ? (
-      <div>Latitude: {this.state.lat}</div>
+      <SeasonDisplay lat={this.state.lat} />
     ) : (
       <div>{this.state.errorMessage}</div>
     );
