@@ -24,7 +24,7 @@ class App extends React.Component {
     return this.state.errorMessage === '' ? (
       <SeasonDisplay lat={this.state.lat} />
     ) : (
-      <div>{this.state.errorMessage}</div>
+      <div>Error: {this.state.errorMessage}</div>
     );
   }
 }
